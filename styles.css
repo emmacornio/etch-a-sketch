@@ -1,0 +1,50 @@
+body {
+	box-sizing: border-box;
+	background-image: linear-gradient(to top left, pink, lightblue);
+	display: flex;
+}
+main {
+	display: flex;
+}
+.selector {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#color-selector {
+	align-self: center;
+}
+.selector > p,
+button {
+	width: 250px;
+	margin: 5px;
+	padding: 0;
+	background-color: plum;
+	border-radius: 50px;
+	text-align: center;
+	box-shadow: none;
+}
+#sketch-grid {
+	width: 500px;
+	height: 500px;
+	/* display: flex;
+
+	flex-wrap: wrap; */
+	display: grid;
+	/* border: 0.1px solid black; */
+}
+.grid-div {
+	box-sizing: border-box;
+	/*flex: 1;*/
+	/* height: 50px;
+	width: 50px; */
+
+	background-color: white;
+	/* repeat(${value}, 1fr) */
+	transition-duration: 500ms;
+}
+
+.black {
+	background-color: black;
+}
