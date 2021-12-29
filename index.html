@@ -9,19 +9,42 @@
 		<script src="scrtip.js" defer></script>
 	</head>
 	<body>
-		<header></header>
+		<header>
+			<h1>Etch-a-Sketch</h1>
+		</header>
 		<main>
 			<div class="selector">
-				select a color
-				<input id="color-selector" type="color" />
 				<input id="size-slider" type="range" min="10" max="100" />
-				<p>grid size:</p>
-				<p id="slider-value">30</p>
+				grid size:
+				<p id="slider-value"></p>
 				<button id="set-btn">Set</button>
 				<button id="clear-btn">Clear</button>
 			</div>
 			<div id="sketch-grid"></div>
+			<div class="selector">
+				select a color
+				<input id="color-selector" type="color" />
+				<button id="classic-btn">Classic mode</button>
+				<button id="rainbow-btn">Rainbow mode</button>
+				<button id="fancy-btn">Eraser mode</button>
+			</div>
 		</main>
-		<footer></footer>
+		<footer class="footer">
+			<nav class="navigation">
+				<ul class="links">
+					<li>
+						Check the source code on my
+						<a href="https://github.com/emmacornio/etch-a-sketch">Github</a>
+					</li>
+					<li>
+						This project is part of
+						<a
+							href="https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/etch-a-sketch-project"
+							>The Odin Project Curriculum</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</footer>
 	</body>
 </html>
